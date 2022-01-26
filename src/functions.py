@@ -42,11 +42,9 @@ def check_status():
     if add_to_cart_btn is None:
         return 'ADD_TO_CART_BUTTON_NOT_FOUND';
 
-    # Get the in stock status
+    # Return the in stock status
     # Hope it returns ADD_TO_CART or IN_STOCK
-    status = add_to_cart_btn['data-button-state']
-
-    return status
+    return add_to_cart_btn['data-button-state']
 
 
 def send_email_notification():
