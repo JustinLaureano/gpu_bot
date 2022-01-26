@@ -19,7 +19,7 @@ def gpu_bot():
         Will request the gpu page source and determine
         if the gpu is currently for sale or in stock.
         Will only check during known times that new
-        cards come into stock.
+        cards come in stock.
     """
 
     while True:
@@ -48,7 +48,7 @@ def gpu_bot():
             logging.info(res.message) if res.status == 1 else logging.error(res.message)
 
             if res.status < 1:
-                # Handle email failure
+                # Stop on email failure since it is the whole point of the bot
                 sys.exit(res.message)
 
         # Sleep between each check

@@ -46,8 +46,6 @@ def check_status():
     # Hope it returns ADD_TO_CART or IN_STOCK
     status = add_to_cart_btn['data-button-state']
 
-    print(add_to_cart_btn['data-button-state'])
-
     return status
 
 
