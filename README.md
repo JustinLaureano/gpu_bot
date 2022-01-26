@@ -11,8 +11,11 @@ cp src/.env.example src/.env
 ```
 
 `GMAIL_ADDRESS` and `GMAIL_PASSWORD` - Gmail account that will be sending the emails
+
 `NOTIFICATION_ADDRESS` - Email account that will receiving the in stock notifications
+
 `BESTBUY_URL` - The Best Buy URL to check if GPU's are in stock
+
 `CHECK_STATUS_INTERVAL` - How often the bot should check the in stock availability
 
 ## Run
